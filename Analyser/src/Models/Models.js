@@ -1,18 +1,18 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
 
-import NotAnErrorException from "../NotAnErrorException";
-import { isNative } from "../Utilities/IsNative";
-import { ConcolicValue } from "../Values/WrappedValue";
+const NotAnErrorException = require("../NotAnErrorException");
+const { isNative } = require("../Utilities/IsNative");
+const { ConcolicValue } = require("../Values/WrappedValue");
 
-import Helpers from './Helpers';
-import MathModels from './MathModels';
-import ArrayModels from './ArrayModels';
-import StringModels from './StringModels';
-import FnModels from './FnModels';
-import RegexModels from './RegexModels';
-import DOMModels from './DOMModels';
-import JSONModels from './JSONModels';
+const Helpers = require('./Helpers');
+const MathModels = require('./MathModels');
+const ArrayModels = require('./ArrayModels');
+const StringModels = require('./StringModels');
+const FnModels = require('./FnModels');
+const RegexModels = require('./RegexModels');
+const DOMModels = require('./DOMModels');
+const JSONModels = require('./JSONModels');
 
 function Model() {
 	this._models = [];
@@ -74,4 +74,4 @@ function BuildModels(state) {
 	return model;
 }
 
-export default BuildModels;
+module.exports = BuildModels;

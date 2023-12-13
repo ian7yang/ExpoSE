@@ -17,7 +17,7 @@ function calectron() {
 const ld = is_external() ? calectron().remote.require : require;
 const electronWindow = is_external() ? calectron().remote.getCurrentWindow() : null;
 
-export default {
+module.exports = {
 	load: function (library) {
 		return ld(library);
 	},

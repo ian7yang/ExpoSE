@@ -6,15 +6,15 @@
 /*global Element*/
 /*global document*/
 
-import { ConcolicValue } from "./Values/WrappedValue";
-import { SymbolicObject } from "./Values/SymbolicObject";
-import ObjectHelper from "./Utilities/ObjectHelper";
-import SymbolicState from "./SymbolicState";
-import Log from "./Utilities/Log";
-import NotAnErrorException from "./NotAnErrorException";
-import { isNative } from "./Utilities/IsNative";
-import ModelBuilder from "./Models/Models";
-import External from "./External";
+const { ConcolicValue } = require("./Values/WrappedValue");
+const { SymbolicObject } = require("./Values/SymbolicObject");
+const ObjectHelper = require("./Utilities/ObjectHelper");
+const SymbolicState = require("./SymbolicState");
+const Log = require("./Utilities/Log");
+const NotAnErrorException = require("./NotAnErrorException");
+const { isNative } = require("./Utilities/IsNative");
+const ModelBuilder = require("./Models/Models");
+const External = require("./External");
 
 class SymbolicExecution {
 
@@ -540,4 +540,4 @@ class SymbolicExecution {
 	onReady(cb) { cb(); }
 }
 
-export default SymbolicExecution;
+module.exports = SymbolicExecution;

@@ -1,13 +1,13 @@
-import { ConcolicValue } from "../Values/WrappedValue";
-import Config from "../Config";
-import Log from "../Utilities/Log";
-import { stringify } from "../Utilities/SafeJson";
-import External from "../External";
-import Z3 from "z3javascript";
+const { ConcolicValue } = require("../Values/WrappedValue");
+const Config = require("../Config");
+const Log = require("../Utilities/Log");
+const { stringify } = require("../Utilities/SafeJson");
+const External = require("../External");
+const Z3 = require("z3javascript");
 
 let isMatchCount = 0;
 
-export default function(state, ctx, model, helpers) {
+module.exports = function(state, ctx, model, helpers) {
 
 	const coerceToString = helpers.coerceToString;
 

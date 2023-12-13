@@ -1,10 +1,10 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
-
-import Internal from "./Internal";
-import Center from "./Center";
-import Config from "./Config";
-import CoverageMap from "./CoverageMap";
-import JsonWriter from "./JsonWriter";
+require('dotenv').config()
+const Internal = require("./Internal");
+const Center = require("./Center");
+const Config = require("./Config");
+const CoverageMap = require("./CoverageMap");
+const JsonWriter = require("./JsonWriter");
 
 process.title = "ExpoSE Distributor";
 

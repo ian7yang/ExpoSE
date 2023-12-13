@@ -1,10 +1,10 @@
-import Config from "./Config";
-import Default from "./Strategies/Default";
-import Deterministic from "./Strategies/Deterministic";
-import Random from "./Strategies/Random";
-import BucketsDeterministic from "./Strategies/BucketsDeterministic";
+const Config = require("./Config");
+const Default = require("./Strategies/Default");
+const Deterministic = require("./Strategies/Deterministic");
+const Random = require("./Strategies/Random");
+const BucketsDeterministic = require("./Strategies/BucketsDeterministic");
 
-export default (function() {
+module.exports = (function() {
 	const strat = Config.testStrategy; 
 	switch (strat) {
 	case "default": return Default;

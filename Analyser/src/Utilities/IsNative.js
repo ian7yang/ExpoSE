@@ -1,6 +1,6 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
-import Log from './Log';
+const Log = require('./Log');
 
 /** 
  * Some code is from https://gist.github.com/jdalton/5e34d890105aca44399f by John-David Dalton
@@ -50,4 +50,4 @@ function isNative(v) {
 	}
 }
 
-export {isNative};
+module.exports = {isNative};

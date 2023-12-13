@@ -88,4 +88,4 @@ ConcolicValue.setSymbolic = function(val, val_s) {
     }
 };
 
-export {WrappedValue, ConcolicValue};
+module.exports =  {WrappedValue, ConcolicValue};

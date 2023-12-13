@@ -1,3 +1,3 @@
-export default function(filename) {
+module.exports = function(filename) {
 	return filename.includes("/lib/S$/");
 }

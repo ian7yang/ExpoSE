@@ -1,7 +1,7 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
-import Config from "../Config";
-import { stringify } from "./SafeJson";
+const Config = require("../Config");
+const { stringify } = require("./SafeJson");
 const fs = require("fs");
 
 function makeid(count) {
@@ -63,4 +63,4 @@ class Log {
     }
 }
 
-export default new Log();
+module.exports = new Log();

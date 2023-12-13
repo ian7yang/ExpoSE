@@ -1,7 +1,7 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
-import FileTransformer from "./FileTransformer";
-import Internal from "./Internal";
+const FileTransformer = require("./FileTransformer");
+const Internal = require("./Internal");
 require("colors");
 
 function generateCoverageMap(lineInfo, callback) {
@@ -36,4 +36,4 @@ function generateCoverageMap(lineInfo, callback) {
 	}
 }
 
-export default generateCoverageMap;
+module.exports = generateCoverageMap;

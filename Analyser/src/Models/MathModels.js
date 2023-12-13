@@ -1,6 +1,6 @@
-import { ConcolicValue } from "../Values/WrappedValue";
+const { ConcolicValue } = require("../Values/WrappedValue");
 
-export default function(state, ctx, model, helper) {
+module.exports = function(state, ctx, model, helper) {
 
 	const symbolicHook = helper.symbolicHook;
 

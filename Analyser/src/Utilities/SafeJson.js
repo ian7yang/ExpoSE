@@ -9,11 +9,16 @@
 const safeStringify = JSON.stringify;
 const safeParse = JSON.parse;
 
-export function stringify() {
+function stringify() {
   return safeStringify.apply(null, arguments);
 }
 
-export function parse() {
+function parse() {
   return safeParse.apply(null, arguments);
+}
+
+module.exports = {
+  stringify,
+  parse
 }
 

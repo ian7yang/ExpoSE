@@ -2,11 +2,11 @@
 
 
 
-import Spawn from "./Spawn";
-import Strategy from "./Strategies";
-import Coverage from "./CoverageAggregator";
-import Stats from "Stats";
-import Log from "./Log";
+const Spawn = require("./Spawn");
+const Strategy = require("./Strategies");
+const Coverage = require("./CoverageAggregator");
+const Stats = require("Stats");
+const Log = require("./Log");
 
 class Center {
 
@@ -175,4 +175,4 @@ class Center {
 	}
 }
 
-export default Center;
+module.exports = Center;

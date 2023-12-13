@@ -2,7 +2,7 @@
 
 
 
-import {spawn} from "child_process";
+const {spawn} = require("child_process");
 
 const tmp = require("tmp");
 const fs = require("fs");
@@ -156,4 +156,4 @@ class Spawn {
 	}
 }
 
-export default Spawn;
+module.exports = Spawn;

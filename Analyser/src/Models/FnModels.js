@@ -1,4 +1,4 @@
-export default function(state, ctx, model, helpers) {
+module.exports = function(state, ctx, model, helpers) {
 
 	const ConcretizeIfNative = helpers.ConcretizeIfNative;
 

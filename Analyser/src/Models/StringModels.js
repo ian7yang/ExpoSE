@@ -1,11 +1,11 @@
-import { ConcolicValue } from "../Values/WrappedValue";
-import Log from "../Utilities/Log";
-import External from "../External";
-import Z3 from "z3javascript";
+const { ConcolicValue } = require("../Values/WrappedValue");
+const Log = require("../Utilities/Log");
+const External = require("../External");
+const Z3 = require("z3javascript");
 
 const find = Array.prototype.find;
 
-export default function(state, ctx, model, helpers) {
+module.exports = function(state, ctx, model, helpers) {
 
   const mkIndexSymbol = helpers.mkIndexSymbol;
 	const symbolicHook = helpers.symbolicHook;

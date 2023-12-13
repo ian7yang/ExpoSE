@@ -1,11 +1,11 @@
-import Config from "../Config";
-import { ConcolicValue } from "../Values/WrappedValue";
-import Log from "../Utilities/Log";
-import ObjectHelper from "../Utilities/ObjectHelper";
-import { isNative } from "../Utilities/IsNative";
+const Config = require("../Config");
+const { ConcolicValue } = require("../Values/WrappedValue");
+const Log = require("../Utilities/Log");
+const ObjectHelper = require("../Utilities/ObjectHelper");
+const { isNative } = require("../Utilities/IsNative");
 const map = Array.prototype.map;
 
-export default function(state, ctx, model) {
+module.exports = function(state, ctx, model) {
 
 	function runMethod(f, base, args, concretize = true) {
 		let result, thrown;

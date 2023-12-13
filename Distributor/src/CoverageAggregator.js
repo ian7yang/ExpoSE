@@ -199,4 +199,4 @@ class Coverage {
 	}
 }
 
-export default Coverage;
+module.exports = Coverage;

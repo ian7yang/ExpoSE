@@ -1,6 +1,6 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
-import { WrappedValue } from "./WrappedValue";
+const { WrappedValue } = require("./WrappedValue");
 
 class SymbolicObject extends WrappedValue {
     
@@ -39,4 +39,4 @@ class SymbolicObject extends WrappedValue {
     }
 }
 
-export { SymbolicObject };
+module.exports = { SymbolicObject };

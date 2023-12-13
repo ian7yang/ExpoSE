@@ -2,17 +2,17 @@
 
 // JALANGI DO NOT INSTRUMENT
 
-import Log from "./Utilities/Log";
-import ObjectHelper from "./Utilities/ObjectHelper";
-import Coverage from "./Coverage";
-import Config from "./Config";
-import SymbolicHelper from "./SymbolicHelper";
-import { SymbolicObject } from "./Values/SymbolicObject";
-import { WrappedValue, ConcolicValue } from "./Values/WrappedValue";
-import { stringify } from "./Utilities/SafeJson";
-import Stats from "Stats";
-import Z3 from "z3javascript";
-import Helpers from "./Models/Helpers";
+const Log = require("./Utilities/Log");
+const ObjectHelper = require("./Utilities/ObjectHelper");
+const Coverage = require("./Coverage");
+const Config = require("./Config");
+const SymbolicHelper = require("./SymbolicHelper");
+const { SymbolicObject } = require("./Values/SymbolicObject");
+const { WrappedValue, ConcolicValue } = require("./Values/WrappedValue");
+const { stringify } = require("./Utilities/SafeJson");
+const Stats = require("Stats");
+const Z3 = require("z3javascript").default;
+const Helpers = require("./Models/Helpers");
 
 function BuildUnaryJumpTable(state) {
 	const ctx = state.ctx;
@@ -673,4 +673,4 @@ class SymbolicState {
 	}
 }
 
-export default SymbolicState;
+module.exports = SymbolicState;

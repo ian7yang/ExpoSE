@@ -2,7 +2,7 @@
 
 
 
-import {spawn} from "child_process";
+const {spawn} = require("child_process");
 
 const EXPOSE_TEST_SCRIPT = "./expoSE";
 
@@ -52,4 +52,4 @@ class Tester {
 	}
 }
 
-export default Tester;
+module.exports = Tester;

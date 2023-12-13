@@ -1,6 +1,6 @@
 /* Copyright (c) Royal Holloway, University of London | Contact Blake Loring (blake@parsed.uk), Duncan Mitchell (Duncan.Mitchell.2015@rhul.ac.uk), or Johannes Kinder (johannes.kinder@rhul.ac.uk) for details or support | LICENSE.md for license details */
 
-import External from "./External";
+const External = require("./External");
 
 const process = External.load("process");
 
@@ -9,7 +9,7 @@ function Default(i, d) {
 	return envvar || d;
 }
 
-export default {
+module.exports = {
 	incrementalSolverEnabled: !!Default("USE_INCREMENTAL_SOLVER", true),
 	maxRefinements: Number.parseInt(Default("MAX_REFINEMENTS", "40")),
 	maxSolverTime: Number.parseInt(Default("MAX_SOLVER_TIME", 1800000)),

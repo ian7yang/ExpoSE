@@ -38,7 +38,7 @@ function timeFrom(envArg, defaultVal) {
 	return timeToMS(getArgument(envArg, "string", defaultVal));
 }
 
-export default {
+module.exports = {
 	maxConcurrent: maxConcurrent(), //max number of tests to run concurrently
 	maxTime: timeFrom("EXPOSE_MAX_TIME", "2h"),
 	testMaxTime: timeFrom("EXPOSE_TEST_TIMEOUT", "40m"),

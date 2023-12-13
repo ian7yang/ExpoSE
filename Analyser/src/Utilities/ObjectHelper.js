@@ -74,4 +74,4 @@ ObjectHelper.asString = function(item, forceSafe, depth) {
     }
 };
 
-export default ObjectHelper;
+module.exports = ObjectHelper;

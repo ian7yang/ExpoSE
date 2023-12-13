@@ -44,7 +44,7 @@ const UnaryJumpTable = {
 	"typeof": function(v) { return typeof v; }
 };
 
-export default {
+module.exports = {
 	evalBinary: function(op, left, right) {
 		return BinaryJumpTable[op](left, right);
 	},

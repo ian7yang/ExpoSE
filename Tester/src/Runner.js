@@ -2,8 +2,8 @@
 
 
 
-import Tester from "./Tester";
-import Walker from "./Walker";
+const Tester = require("./Tester");
+const Walker = require("./Walker");
 
 class Runner {
 
@@ -102,4 +102,4 @@ class Runner {
 	}
 }
 
-export default Runner;
+module.exports = Runner;

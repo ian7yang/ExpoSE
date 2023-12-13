@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 
-export default function(filename) {
+module.exports = function(filename) {
 	return new Promise((resolve, reject) => {
 		fs.readFile(filename, (err, data) => {
 			if (err) {

@@ -7,15 +7,16 @@
 //
 // Symbolic execution analyser entry point
 
-import SymbolicExecution from "./SymbolicExecution";
-import Config from "./Config";
-import Log from "./Utilities/Log";
-import External from "./External";
+const SymbolicExecution = require("./SymbolicExecution");
+const Config = require("./Config");
+const Log = require("./Utilities/Log");
+const External = require("./External");
 
 const fs = External.load("fs");
 const process = External.load("process");
 
 const input = process.argv[process.argv.length - 1];
+console.log(process.argv)
 
 Log.logHigh("Built with VERY logging enabled");
 Log.logMid("Built with FINE logging enabled");

@@ -1,7 +1,7 @@
-import { ConcolicValue } from '../Values/WrappedValue';
-import Log from '../Utilities/Log';
+const { ConcolicValue } = require('../Values/WrappedValue');
+const Log = require('../Utilities/Log');
 
-export default function(state, ctx, models, helper) {
+module.exports = function(state, ctx, models, helper) {
   if (typeof window !== "undefined") {
     models.add(Element.prototype.getAttribute, helper.NoOp(Element.prototype.getAttribute));
     models.add(Element.prototype.setAttribute, helper.NoOp(Element.prototype.setAttribute));

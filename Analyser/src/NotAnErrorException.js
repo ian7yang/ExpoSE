@@ -12,4 +12,4 @@ NotAnErrorException.prototype.toString = function() {
 	return "NotAnErrorException";
 };
 
-export default NotAnErrorException;
+module.exports = NotAnErrorException;
