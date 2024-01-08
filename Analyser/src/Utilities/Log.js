@@ -27,11 +27,11 @@ const log_path = console.log;
 class Log {
 
     logHigh(msg) {
-        log_path("[?] " + msg);
+        log_path("[!!!] " + msg);
     }
 
     logMid(msg) {
-        log_path("[?] " + msg);
+        log_path("[!!] " + msg);
     }
 
     log(msg) {

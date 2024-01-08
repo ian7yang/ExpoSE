@@ -16,8 +16,8 @@ module.exports = {
 	regexEnabled: !Default("DISABLE_REGULAR_EXPRESSIONS", false),
 	capturesEnabled: !Default("DISABLE_CAPTURE_GROUPS", false),
 	refinementsEnabled: !Default("DISABLE_REFINEMENTS", false),
-	outFilePath: Default("OUT_PATH", undefined),
-	outCoveragePath: Default("COVERAGE_PATH", undefined),
-	outQueriesDir: Default("QUERY_DUMP", undefined),
+	outFilePath: Default("OUT_PATH", "output.json"),
+	outCoveragePath: Default("COVERAGE_PATH", "coverage.json"),
+	outQueriesDir: Default("QUERY_DUMP", "queries"),
 	stringSolver: Default("STRING_SOLVER", "seq")
 };
